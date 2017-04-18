@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pcountry:</strong>
+  <%= @project.pcountry %>
+</p>
+
+<p>
+  <strong>Pstate:</strong>
+  <%= @project.pstate %>
+</p>
+
+<p>
+  <strong>Paddress1:</strong>
+  <%= @project.paddress1 %>
+</p>
+
+<p>
+  <strong>Paddress2:</strong>
+  <%= @project.paddress2 %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @project.project %>
+</p>
+
+<p>
+  <strong>Noofvac:</strong>
+  <%= @project.noofvac %>
+</p>
+
+<p>
+  <strong>Grcrd:</strong>
+  <%= @project.grcrd %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

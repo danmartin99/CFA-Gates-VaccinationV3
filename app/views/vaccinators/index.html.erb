@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vaccinators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vac name1</th>
+      <th>Vac name2</th>
+      <th>Vac idnum</th>
+      <th>Vac photo</th>
+      <th>Vac title</th>
+      <th>Vendor name</th>
+      <th>Vac email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vaccinators.each do |vaccinator| %>
+      <tr>
+        <td><%= vaccinator.vac_name1 %></td>
+        <td><%= vaccinator.vac_name2 %></td>
+        <td><%= vaccinator.vac_idnum %></td>
+        <td><%= vaccinator.vac_photo %></td>
+        <td><%= vaccinator.vac_title %></td>
+        <td><%= vaccinator.vendor_name %></td>
+        <td><%= vaccinator.vac_email %></td>
+        <td><%= link_to 'Show', vaccinator %></td>
+        <td><%= link_to 'Edit', edit_vaccinator_path(vaccinator) %></td>
+        <td><%= link_to 'Destroy', vaccinator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vaccinator', new_vaccinator_path %>

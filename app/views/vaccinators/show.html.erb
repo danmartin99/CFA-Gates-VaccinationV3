@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vac name1:</strong>
+  <%= @vaccinator.vac_name1 %>
+</p>
+
+<p>
+  <strong>Vac name2:</strong>
+  <%= @vaccinator.vac_name2 %>
+</p>
+
+<p>
+  <strong>Vac idnum:</strong>
+  <%= @vaccinator.vac_idnum %>
+</p>
+
+<p>
+  <strong>Vac photo:</strong>
+  <%= @vaccinator.vac_photo %>
+</p>
+
+<p>
+  <strong>Vac title:</strong>
+  <%= @vaccinator.vac_title %>
+</p>
+
+<p>
+  <strong>Vendor name:</strong>
+  <%= @vaccinator.vendor_name %>
+</p>
+
+<p>
+  <strong>Vac email:</strong>
+  <%= @vaccinator.vac_email %>
+</p>
+
+<%= link_to 'Edit', edit_vaccinator_path(@vaccinator) %> |
+<%= link_to 'Back', vaccinators_path %>

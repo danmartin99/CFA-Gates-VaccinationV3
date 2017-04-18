@@ -1,0 +1,2 @@
+class Grcrd < ApplicationRecord
+end

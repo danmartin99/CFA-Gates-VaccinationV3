@@ -1,0 +1,17 @@
+<%= simple_form_for(@vaccinator) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :vac_name1 %>
+    <%= f.input :vac_name2 %>
+    <%= f.input :vac_idnum %>
+    <%= f.input :vac_photo %>
+    <%= f.input :vac_title %>
+    <%= f.input :vendor_name %>
+    <%= f.input :vac_email %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

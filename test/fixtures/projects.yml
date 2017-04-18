@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pcountry: MyString
+  pstate: MyString
+  paddress1: MyString
+  paddress2: MyString
+  project: 1
+  noofvac: 1
+  grcrd: one
+
+two:
+  pcountry: MyString
+  pstate: MyString
+  paddress1: MyString
+  paddress2: MyString
+  project: 1
+  noofvac: 1
+  grcrd: two

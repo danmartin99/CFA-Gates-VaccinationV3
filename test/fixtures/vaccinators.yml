@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vac_name1: MyString
+  vac_name2: MyString
+  vac_idnum: 1
+  vac_photo: 
+  vac_title: MyString
+  vendor_name: MyString
+  vac_email: MyString
+
+two:
+  vac_name1: MyString
+  vac_name2: MyString
+  vac_idnum: 1
+  vac_photo: 
+  vac_title: MyString
+  vendor_name: MyString
+  vac_email: MyString
