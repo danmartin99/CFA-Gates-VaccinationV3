@@ -2,13 +2,16 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :vac_name1 %>
-    <%= f.input :vac_name2 %>
-    <%= f.input :vac_idnum %>
-    <%= f.input :vac_photo %>
-    <%= f.input :vac_title %>
-    <%= f.input :vendor_name %>
-    <%= f.input :vac_email %>
+    
+    <%= f.input :vac_name1, placeholder: 'First Name',label: 'Vaccinator 1st Name' %>
+    <%= f.input :vac_name2, placeholder: 'Surname',label: 'Vaccinator Surame' %>
+    <%= f.input :vac_idnum, placeholder: 'ID num',label: 'Vaccinator ID Number' %>
+    <%#= f.input :vac_photo %>
+    <%= f.input :vac_title, placeholder: 'Title',label: 'Vaccinator Title'%>
+    <%= f.input :vendor_name, placeholder: 'Vendor Name',label: 'Vendor Name'%>
+    <%= f.input :vac_email, placeholder: 'Email',label: 'Vaccinator Email'%>
+
+
   </div>
 
   <div class="form-actions">

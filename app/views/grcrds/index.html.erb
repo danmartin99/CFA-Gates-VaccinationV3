@@ -1,37 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Grcrds</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>G nam1</th>
-      <th>G name2</th>
-      <th>G idnum</th>
-      <th>G photo</th>
-      <th>G title</th>
-      <th>G email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @grcrds.each do |grcrd| %>
+<div class="container">
+  <h1>Grant Coordinators</h1>
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= grcrd.g_nam1 %></td>
-        <td><%= grcrd.g_name2 %></td>
-        <td><%= grcrd.g_idnum %></td>
-        <td><%= grcrd.g_photo %></td>
-        <td><%= grcrd.g_title %></td>
-        <td><%= grcrd.g_email %></td>
-        <td><%= link_to 'Show', grcrd %></td>
-        <td><%= link_to 'Edit', edit_grcrd_path(grcrd) %></td>
-        <td><%= link_to 'Destroy', grcrd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Grant Co-rd 1st Name</th>
+        <th>Grant Co-rd 2nd Name</th>
+        <th>Grant Co-rd id</th>
+        <th>Grant Co-rd photo</th>
+        <th>Grant Co-rd title</th>
+        <th>Grant Co-rd email</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @grcrds.each do |grcrd| %>
+        <tr>
+          <td><%= grcrd.g_nam1 %></td>
+          <td><%= grcrd.g_name2 %></td>
+          <td><%= grcrd.g_idnum %></td>
+          <td><%= grcrd.g_photo %></td>
+          <td><%= grcrd.g_title %></td>
+          <td><%= grcrd.g_email %></td>
+          <td><%= link_to 'Show', grcrd %></td>
+          <td><%= link_to 'Edit', edit_grcrd_path(grcrd) %></td>
+          <td><%= link_to 'Destroy', grcrd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
 
-<%= link_to 'New Grcrd', new_grcrd_path %>
+  <%= link_to 'New Grcrd', new_grcrd_path %>
+
+</div>
