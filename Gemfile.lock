@@ -155,6 +155,10 @@ GEM
     simple_form (3.4.0)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
+    simple_form_fancy_uploads (0.2.0)
+      carrierwave
+      rails (>= 4.0.0)
+      simple_form (~> 3.1)
     sixarm_ruby_unaccent (1.1.1)
     sort_alphabetical (1.1.0)
       unicode_utils (>= 1.2.2)
@@ -211,6 +215,7 @@ DEPENDENCIES
   rails (~> 5.0.2)
   sass-rails (~> 5.0)
   simple_form
+  simple_form_fancy_uploads
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

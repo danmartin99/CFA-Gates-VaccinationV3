@@ -6,11 +6,11 @@
   <table class="table">
   <thead>
     <tr>
-      <th>Patient 1st Name</th>
-      <th>Patient 2nd Name</th>
+      <th>First Name</th>
+      <th>Surame</th>
       <th>DOB</th>
       <!-- <th>Photo</th> -->
-      <th>Female?</th>
+      <th></th>
       <th>1st Address</th>
       <th>2nd Address</th>
       <th>Post Code</th>
@@ -34,7 +34,7 @@
         <td><%= patient.post_code %></td>
         <td><%= patient.state %></td>
         <td><%= patient.country %></td>
-        <td><%= patient.vaccinator %></td>
+        <td><%= patient.vaccinator.vac_email %></td>
         <td><%= link_to 'Show', patient %></td>
         <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
         <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>

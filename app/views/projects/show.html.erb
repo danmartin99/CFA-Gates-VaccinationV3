@@ -1,38 +1,38 @@
 <p id="notice"><%= notice %></p>
-
+<h1>Projects</h1>
 <p>
   <strong>Project Country:</strong>
   <%= @project.pcountry %>
 </p>
 
 <p>
-  <strong>Pstate:</strong>
+  <strong>Project State:</strong>
   <%= @project.pstate %>
 </p>
 
 <p>
-  <strong>Paddress1:</strong>
+  <strong>Project 1st Address:</strong>
   <%= @project.paddress1 %>
 </p>
 
 <p>
-  <strong>Paddress2:</strong>
+  <strong>Project 2nd Address:</strong>
   <%= @project.paddress2 %>
 </p>
 
 <p>
-  <strong>Project:</strong>
+  <strong>Project ID:</strong>
   <%= @project.project %>
 </p>
 
 <p>
-  <strong>Noofvac:</strong>
+  <strong>No. of Vacinations this project:</strong>
   <%= @project.noofvac %>
 </p>
 
 <p>
-  <strong>Grcrd:</strong>
-  <%= @project.grcrd %>
+  <strong>Grant Co-rd:</strong>
+  <%= @project.grcrd.g_email %>
 </p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
