@@ -25,7 +25,7 @@ class GrcrdsController < ApplicationController
   # POST /grcrds.json
   def create
     @grcrd = Grcrd.new(grcrd_params)
-
+    @grcrd.user_id = current_user.id 
     respond_to do |format|
       if @grcrd.save
         format.html { redirect_to @grcrd, notice: 'Grcrd was successfully created.' }

@@ -4,6 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-         has_many :vaccinators, dependent: :destroy
-         has_many :grcrds, dependent: :destroy
+  has_one :vaccinator, dependent: :destroy
+  has_one :grcrd, dependent: :destroy
 end

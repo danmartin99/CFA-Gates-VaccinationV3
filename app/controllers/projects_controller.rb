@@ -26,6 +26,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
 
+    @project.grcrd_id = current_user.grcrd.id
     respond_to do |format|
       if @project.save
         format.html { redirect_to @project, notice: 'Project was successfully created.' }

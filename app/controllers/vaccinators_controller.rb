@@ -25,7 +25,7 @@ class VaccinatorsController < ApplicationController
   # POST /vaccinators.json
   def create
     @vaccinator = Vaccinator.new(vaccinator_params)
-
+    @vaccinator.user_id = current_user.id
     respond_to do |format|
       if @vaccinator.save
         format.html { redirect_to @vaccinator, notice: 'Vaccinator was successfully created.' }
