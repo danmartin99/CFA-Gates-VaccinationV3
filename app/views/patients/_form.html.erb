@@ -2,20 +2,22 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :first_name %>
-    <%= f.input :surname %>
-    <%= f.input :dob %>
+    <%= f.input :first_name, label: 'First Name' %>
+    <%= f.input :surname, label: 'Second Name' %>
+    <%= f.input :dob, label: 'DOB' %>
     <%#= f.input :photo %>
-    <%= f.input :gender %>
-    <%= f.input :address1 %>
-    <%= f.input :address2 %>
-    <%= f.input :post_code %>
+    <%= f.input :gender,  label: 'Female ?'%>
+    <%= f.input :address1, label: 'First Address' %>
+    <%= f.input :address2, label: 'Second Address' %>
+    <%= f.input :post_code, label: 'Post Code' %>
     <%= f.input :state %>
     <%= f.input :country %>
-    <%= f.association :vaccinator %>
+    <%#= f.association :vaccinator %>
+          <%= f.association :vaccinator, label_method: :vac_email, value_method: :id, include_blank: false %>
   </div>
 
   <div class="form-actions">
+    <br>
     <%= f.button :submit %>
   </div>
 <% end %>
