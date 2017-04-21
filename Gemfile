@@ -12,7 +12,9 @@ gem 'simple_form'
 gem 'devise'
 gem 'country_select'
 gem 'simple_form_fancy_uploads'
-gem "brakeman", :require => false
+#gem "brakeman", :require => false
+gem 'cloudinary'
+gem 'rubocop', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
