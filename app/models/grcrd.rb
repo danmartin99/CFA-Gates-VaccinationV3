@@ -6,4 +6,5 @@ class Grcrd < ApplicationRecord
 
   has_many :projects, dependent: :destroy
   belongs_to :user
+  mount_uploader :g_photo, GrcrdpicUploader
 end

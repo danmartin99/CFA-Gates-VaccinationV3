@@ -17,7 +17,8 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @patient.photo %>
+  <%#= image_tag(@patient.photo) %>
+  <img src="<%= @patient.photo %>" alt="">
 </p>
 
 <p>

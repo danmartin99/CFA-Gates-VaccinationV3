@@ -6,6 +6,8 @@
     <%= f.input :vac_name1, placeholder: 'First Name',label: 'Vaccinator 1st Name' %>
     <%= f.input :vac_name2, placeholder: 'Surname',label: 'Vaccinator Surame' %>
     <%= f.input :vac_idnum, placeholder: 'ID num',label: 'Vaccinator ID Number' %>
+    <%= f.label :vac_photo, label: 'Vaccinator Photo' %>
+    <%= f.file_field :vac_photo %>
     <%#= f.input :vac_photo %>
     <%= f.input :vac_title, placeholder: 'Title',label: 'Vaccinator Title'%>
     <%= f.input :vendor_name, placeholder: 'Vendor Name',label: 'Vendor Name'%>

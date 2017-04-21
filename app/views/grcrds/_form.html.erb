@@ -5,12 +5,14 @@
     <%= f.input :g_nam1, label: 'First Name' %>
     <%= f.input :g_name2, label: 'Second Name' %>
     <%= f.input :g_idnum, label: 'Grant Co-rd Id No' %>
-    <%= f.input :g_photo, label: 'Photo' %>
+    <%= f.label :g_photo, label: 'Grant Co-rd Photo' %>
+    <%= f.file_field :g_photo %>
+    <!-- <%= f.input :g_photo, label: 'Photo' %> -->
     <%= f.input :g_title, label: 'Title' %>
     <%= f.input :g_email, label: 'Email Id' %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, label: 'Grant Coordinator' %>
   </div>
 <% end %>

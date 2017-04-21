@@ -5,4 +5,5 @@ class Vaccinator < ApplicationRecord
        has_many :patients, dependent: :destroy
        has_many :projects, dependent: :destroy
        belongs_to :user
+       mount_uploader :vac_photo, VaccinatorpicUploader
 end
