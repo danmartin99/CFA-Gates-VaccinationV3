@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby  '2.4.0'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'carrierwave', '~> 1.0'
 gem 'pundit'
@@ -15,6 +17,9 @@ gem 'simple_form_fancy_uploads'
 #gem "brakeman", :require => false
 gem 'cloudinary'
 gem 'rubocop', require: false
+gem 'rails_12factor', group: :production
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
