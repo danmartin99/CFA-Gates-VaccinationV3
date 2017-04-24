@@ -27,6 +27,7 @@
         <td><%= project.project %></td>
         <td><%= project.noofvac %></td>
         <td><%= project.grcrd.g_email %></td>
+        <td><%#= project.inspect %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>

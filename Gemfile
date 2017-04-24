@@ -18,7 +18,14 @@ gem 'simple_form_fancy_uploads'
 gem 'cloudinary'
 gem 'rubocop', require: false
 gem 'rails_12factor', group: :production
+gem 'mailboxer'
 
+group :development, :test do
+  # testing
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
+  gem 'pry'
+end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
