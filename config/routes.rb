@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :patients
   resources :vaccinators
   resources :grcrds
+  resources :mailbox
 
   # mailbox folder routes
  get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
@@ -20,6 +21,6 @@ Rails.application.routes.draw do
    end
  end
 
-  root 'projects#index'
+  # root 'projects#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
