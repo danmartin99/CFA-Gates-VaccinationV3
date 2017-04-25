@@ -5,7 +5,7 @@ application up and running.
 
 You can follow the steps below to setup or goto this link:-
 
-https://evening-retreat-46821.herokuapp.com/ | https://git.heroku.com/evening-retreat-46821.git
+https://evening-retreat-46821.herokuapp.com/ 
 
 Things you may want to cover:
 
