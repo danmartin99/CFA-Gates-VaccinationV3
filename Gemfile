@@ -15,10 +15,12 @@ gem 'devise'
 gem 'country_select'
 gem 'simple_form_fancy_uploads'
 gem 'omniauth'
+gem 'mailgun-ruby', '~>1.1.4'
 #gem "brakeman", :require => false
 gem 'cloudinary'
+gem 'rolify'
 gem 'rubocop', require: false
-# gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 # gem 'mailboxer' does not work as advertised
 
 
