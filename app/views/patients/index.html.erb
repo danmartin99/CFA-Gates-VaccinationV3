@@ -17,6 +17,7 @@
       <th>State</th>
       <th>Country</th>
       <th>Vaccinator</th>
+      <th>Project code</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -35,6 +36,7 @@
         <td><%= patient.state %></td>
         <td><%= patient.country %></td>
         <td><%= patient.vaccinator.vac_email %></td>
+        <td><%#= patient.project.project %></td>
         <td><%= link_to 'Show', patient %></td>
         <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
         <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>

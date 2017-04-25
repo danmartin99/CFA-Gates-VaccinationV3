@@ -34,6 +34,54 @@
   <strong>Grant Co-rd:</strong>
   <%= @project.grcrd.g_email %>
 </p>
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+  <h1>Patients</h1>
+  <table class="table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Surame</th>
+      <th>DOB</th>
+      <!-- <th>Photo</th> -->
+      <th>Female?</th>
+      <th>1st Address</th>
+      <th>2nd Address</th>
+      <th>Post Code</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Vaccinator</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.first_name %></td>
+        <td><%= patient.surname %></td>
+        <td><%= patient.dob %></td>
+        <!-- <td><%= patient.photo %></td> -->
+        <td><%= patient.gender %></td>
+        <td><%= patient.address1 %></td>
+        <td><%= patient.address2 %></td>
+        <td><%= patient.post_code %></td>
+        <td><%= patient.state %></td>
+        <td><%= patient.country %></td>
+        <td><%= patient.vaccinator.vac_email %></td>
+        <td><%= link_to 'Show', patient %></td>
+        <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
+        <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

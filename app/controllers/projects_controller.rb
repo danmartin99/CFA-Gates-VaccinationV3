@@ -10,6 +10,8 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    # get all patients that relate to a particular project
+     @patients = @project.patients
   end
 
   # GET /projects/new
@@ -70,6 +72,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:pcountry, :pstate, :paddress1, :paddress2, :project, :noofvac, :grcrd_id)
+      params.require(:project).permit(:pcountry, :pstate, :paddress1, :paddress2, :project, :noofvac, :grcrd_id, :project)
     end
 end

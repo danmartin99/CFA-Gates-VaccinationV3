@@ -15,6 +15,7 @@
     <%= f.input :country %>
     <%#= f.association :vaccinator %>
     <%= f.association :vaccinator, label_method: :vac_email, value_method: :id, include_blank: false %>
+    <%= f.association :project, label_method: :project, value_method: :id, include_blank: false %>
     <br>
   </div>
 

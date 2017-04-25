@@ -14,11 +14,14 @@ gem 'simple_form'
 gem 'devise'
 gem 'country_select'
 gem 'simple_form_fancy_uploads'
+gem 'omniauth'
 #gem "brakeman", :require => false
 gem 'cloudinary'
 gem 'rubocop', require: false
 gem 'rails_12factor', group: :production
-gem 'mailboxer'
+# gem 'mailboxer' does not work as advertised
+
+
 
 group :development, :test do
   # testing
