@@ -5,9 +5,23 @@ application up and running.
 
 You can follow the steps below to setup or goto this link:-
 
-https://evening-retreat-46821.herokuapp.com/ 
+https://evening-retreat-46821.herokuapp.com/
 
-Things you may want to cover:
+Please also see information in the following folders in GitHub:-
+
+Application Summary
+
+Customer Requirements
+
+EntityRelationshipDiagram
+
+Project Presentation
+
+Screen Wireframes
+
+RubocopTest
+
+WorkflowDiagrams
 
 
 cd rails/CFA-Gates-Vaccination
