@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+#  get 'contact#index'
+
+get 'contact', to: "contact#index"
+post 'contact', to: "contact#mail"
+
+#  get 'contact/mail'
+#  post 'contact#mail'
   root 'welcome#index'
   devise_for :users
   resources :projects
